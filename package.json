@@ -1,0 +1,22 @@
+{
+  "name": "better-npm-run-test-repo",
+  "version": "1.0.0",
+  "description": "Test repo for better-npm-run",
+  "main": "index.js",
+  "author": "Benjamin Orozco <benoror@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "better-npm-run": "0.0.1"
+  },
+  "scripts": {
+    "test": "node node_modules/.bin/better-npm-run test"
+  },
+  "betterScripts": {
+    "test": {
+      "command": "node index.js",
+      "env": {
+        "NODE_ENV": "env_var_set_OK"
+      }
+    }
+  }
+}
